@@ -13,7 +13,7 @@ router.post("/register", async (req, res) => {
       res.json({msg:"user already registered"});
     }
     else
-    {
+    { 
       const res=await User.create({username,password});
       if(res)
       {
